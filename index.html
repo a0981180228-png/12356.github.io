@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apiy.Pihu | Dancer</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+        background: #000;
+        color: #fff;
+        overflow-x: hidden;
+    }
+
+    /* Hero 區塊 */
+    .hero {
+        height: 100vh;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9)),
+                    url('https://images.unsplash.com/photo-1518611012118-f5c5c5c7f4c9?auto=format&fit=crop&w=1500&q=80');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 60px;
+    }
+
+    .name {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .subname {
+        font-size: 20px;
+        opacity: 0.8;
+        margin-top: 10px;
+    }
+
+    .play-btn {
+        margin-top: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #fff;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .play-btn:hover {
+        transform: scale(1.1);
+    }
+
+    /* 內容區 */
+    .content {
+        padding: 40px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .card {
+        background: #111;
+        padding: 20px;
+        border-radius: 16px;
+        margin-bottom: 20px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        background: #1c1c1e;
+    }
+
+    .about {
+        line-height: 1.8;
+        opacity: 0.85;
+    }
+
+    /* 曲目風格列表（舞蹈作品） */
+    .track {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-bottom: 1px solid #222;
+    }
+
+    .track:last-child {
+        border-bottom: none;
+    }
+
+    .track-name {
+        font-weight: 500;
+    }
+
+    .track-time {
+        opacity: 0.6;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px;
+        font-size: 14px;
+        opacity: 0.5;
+    }
+</style>
+
+</head>
+
+<body>
+
+<!-- Hero -->
+<div class="hero">
+    <div class="name">Apiy.Pihu</div>
+    <div class="subname">邱思雅 · Dancer</div>
+    <div class="play-btn">▶</div>
+</div>
+
+<!-- Content -->
+<div class="content">
+
+    <!-- About -->
+    <div class="section-title">About</div>
+    <div class="card about">
+        我是邱思雅，族語名 Apiy.Pihu，來自南投縣仁愛鄉的泰雅族。<br><br>
+        目前就讀國立東華大學原住民族樂舞與藝術學士學位學程二年級。<br><br>
+        我的身體承載著文化與記憶，舞蹈對我而言不只是表演，而是一種與土地、族群與自我對話的方式。
+    </div>
+
+    <!-- Works -->
+    <div class="section-title">Dance Works</div>
+    <div class="card">
+
+        <div class="track">
+            <div class="track-name">旋轉 · Silence Turn</div>
+            <div class="track-time">03:12</div>
+        </div>
+
+        <div class="track">
+            <div class="track-name">腳尖 · Balance</div>
+            <div class="track-time">02:45</div>
+        </div>
+
+        <div class="track">
+            <div class="track-name">山的記憶 · Memory of Mountain</div>
+            <div class="track-time">04:10</div>
+        </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="section-title">Contact</div>
+    <div class="card">
+        Email: 41139a011@gms.ndhu.edu.tw
+    </div>
+
+</div>
+
+<footer>
+    © Apiy.Pihu
+</footer>
+
+</body>
+</html>
